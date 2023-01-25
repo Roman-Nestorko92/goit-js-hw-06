@@ -16,5 +16,3 @@ function functionDecrement() {
   counterValue--;
   countValue.textContent = counterValue.toString();
 }
-
-

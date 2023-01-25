@@ -21,8 +21,8 @@ const picture = images
   )
   .join("");
 
-  console.log(picture)
+console.log(picture);
 
-  const gallery = document.querySelector(".gallery")
+const gallery = document.querySelector(".gallery");
 
-  gallery.insertAdjacentHTML("afterbegin", picture)
+gallery.insertAdjacentHTML("afterbegin", picture);

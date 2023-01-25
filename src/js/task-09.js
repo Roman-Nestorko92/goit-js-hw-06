@@ -10,4 +10,3 @@ button.addEventListener("click", function funcClick() {
   bodyColor.style.background = getRandomHexColor();
   color.textContent = getRandomHexColor();
 });
-
