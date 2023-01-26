@@ -10,6 +10,10 @@ function functionLoginForm(event) {
   if (email.value === "" || password.value === "") {
     return alert("Please fill all elements");
   }
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const obj = {
+    email: email.value,
+    password: password.value,
+  };
+  console.log(obj);
   event.currentTarget.reset();
 }

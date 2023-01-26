@@ -1,12 +1,14 @@
-const valiIput = document.querySelector("#validation-input");
-valiIput.addEventListener("blur", functionValid);
+const input = document.querySelector("#validation-input");
+const dataLength = input.getAttribute("data-length");
+
+input.addEventListener("blur", functionValid);
 
 function functionValid() {
-  const currentLength = this.dataset.length;
-  const inputDataLength = this.value.length;
-  if (currentLength == inputDataLength) {
-    this.style.borderColor = "#4caf50";
+  if (dataLength > this.value.length) {
+    this.classList.remove("valid");
+    this.classList.add("invalid");
   } else {
-    this.style.borderColor = "#f44336";
+    this.classList.remove("invalid");
+    this.classList.add("valid");
   }
 }

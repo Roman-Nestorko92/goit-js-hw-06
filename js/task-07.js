@@ -4,5 +4,5 @@ const span = document.querySelector("#text");
 size.addEventListener("input", functionSize);
 
 function functionSize(event) {
-  span.style.fontSize = event.currentTarget.value + "px";
+  span.style.fontSize = `${event.currentTarget.value}px`;
 }
