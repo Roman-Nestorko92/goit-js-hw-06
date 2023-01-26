@@ -4,11 +4,11 @@ const dataLength = input.getAttribute("data-length");
 input.addEventListener("blur", functionValid);
 
 function functionValid() {
-  if (dataLength > this.value.length) {
-    this.classList.remove("valid");
-    this.classList.add("invalid");
-  } else {
+  if (Number(dataLength) === this.value.length) {
     this.classList.remove("invalid");
     this.classList.add("valid");
+  } else {
+    this.classList.remove("valid");
+    this.classList.add("invalid");
   }
 }
